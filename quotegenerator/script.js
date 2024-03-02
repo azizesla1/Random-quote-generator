@@ -52,16 +52,5 @@ btn.addEventListener("click",() =>{
     fonder.innerText = quotesDataBase[random].author;
 
 })
-const copyBtn = document.getElementById('copy');
 
-const clipboard = new ClipboardJS(copyBtn, {
-    target: function() {
-                return textElement;
-            }
-        });
-
-        copyBtn.addEventListener('click', function() {
-            clipboard.trigger();
-            alert('Text copied to clipboard!');
-        });
 
